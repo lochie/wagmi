@@ -1,8 +1,8 @@
-import { Signer } from 'ethers/lib/ethers'
+import { JsonRpcSigner } from '@ethersproject/providers'
 
 import { getClient } from '../../client'
 
-export type FetchSignerResult = Signer | null
+export type FetchSignerResult = JsonRpcSigner | null
 
 export async function fetchSigner(): Promise<FetchSignerResult> {
   const client = getClient()

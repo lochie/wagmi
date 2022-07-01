@@ -6,6 +6,7 @@ import { Balance } from './Balance'
 import { BlockNumber } from './BlockNumber'
 import { ReadContract } from './ReadContract'
 import { SendTransaction } from './SendTransaction'
+import { SendTransactionEager } from './SendTransactionEager'
 import { SignMessage } from './SignMessage'
 import { Token } from './Token'
 import { WriteContract } from './WriteContract'
@@ -43,6 +44,10 @@ export const Account = () => {
         )}
       </div>
 
+      <div style={{ height: 20 }} />
+
+      <SendTransactionEager />
+
       {false && (
         <>
           {true && (
@@ -54,7 +59,8 @@ export const Account = () => {
               <BlockNumber />
 
               <h4>Send Transaction</h4>
-              <SendTransaction />
+              {/* <SendTransaction /> */}
+              <SendTransactionEager />
             </>
           )}
 

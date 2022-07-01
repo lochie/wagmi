@@ -97,10 +97,16 @@ export {
 } from './tokens'
 
 export {
+  buildTransactionEager,
   sendTransaction,
+  sendTransactionEager,
   waitForTransaction,
+  type BuildTransactionEagerArgs,
+  type BuildTransactionEagerResult,
   type SendTransactionArgs,
   type SendTransactionResult,
+  type SendTransactionEagerArgs,
+  type SendTransactionEagerResult,
   type WaitForTransactionArgs,
   type WaitForTransactionResult,
 } from './transactions'
